@@ -1,0 +1,1327 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  section {
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #profile {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 0 2rem;
+  }
+
+  .article-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .section__text {
+    text-align: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    gap: 2rem;
+  }
+
+  section {
+    margin: 0 1rem;
+    padding: 0;
+  }
+
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .about-containers,
+  .contact-info-upper-container {
+    margin: 1rem auto;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 1rem 0;
+  }
+}
+
+
+
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.project-img {
+  border-radius: 2rem;
+  width: 100%; 
+  height: auto; 
+  max-width: 100%;
+}
+
+
+.about-pic {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #profile {
+    height: auto;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 3rem;
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem 0;
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+
+  section {
+    margin: 0 2rem;
+    padding: 4rem 0;
+  }
+
+  .article-container {
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .details-container {
+    margin: 1.5rem 0;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
+
+  .section__text {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .contact-info-container {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .about-containers {
+    margin: 2rem 0;
+  }
+
+  #experience {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    gap: 3rem;
+    padding: 1.5rem 0;
+  }
+
+  section {
+    margin: 0 1rem;
+    padding: 2rem 0;
+  }
+
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+    margin: 1.5rem auto;
+  }
+
+  .btn-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .about-containers,
+  .contact-info-upper-container {
+    margin: 2rem auto;
+  }
+
+  .details-container {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .article-container {
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+  }
+
+  .experience-sub-title {
+    margin: 1.5rem 0;
+  }
+
+  footer {
+    padding: 2rem 0;
+  }
+
+  footer p {
+    margin: 1rem 0;
+  }
+}
+
+
+
+
+/* Add these base responsive styles */
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container responsiveness */
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Enhance existing media queries */
+@media screen and (max-width: 1200px) {
+  section {
+    margin: 0 5rem;
+    padding: 2rem 0;
+  }
+
+  .section-container {
+    padding: 0 2rem;
+  }
+  
+  .details-container {
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* Profile section adjustments */
+  #profile {
+    min-height: fit-content;
+    padding: 4rem 0;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Project section adjustments */
+  .color-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .project-img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  /* Experience section adjustments */
+  .article-container {
+    gap: 1.5rem;
+  }
+
+  article {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Navigation adjustments */
+  nav {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    font-size: 1.2rem;
+  }
+
+  /* Text adjustments */
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.5rem;
+  }
+
+  /* Button adjustments */
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Experience and Projects adjustments */
+  .article-container {
+    justify-content: center;
+  }
+
+  article {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* General spacing adjustments */
+  section {
+    margin: 0 1rem;
+    padding: 1.5rem 0;
+  }
+
+  /* Profile section adjustments */
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Text size adjustments */
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  /* Contact section adjustments */
+  .contact-info-container {
+    padding: 0.5rem;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 1rem 0;
+  }
+}
+
+/* Add these flexible layout utilities */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Add responsive typography */
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Add these responsive spacing utilities */
+.section-padding {
+  padding: clamp(2rem, 5vw, 5rem) 0;
+}
+
+.container-padding {
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+/* Add responsive image container */
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add smooth transitions for responsive elements */
+.section__pic-container,
+.details-container,
+.btn,
+.nav-links {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Fix for hamburger menu on mobile */
+#hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+}
+
+.menu-links.open {
+  max-height: 100vh;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add responsive hover states */
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .project-img:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Fix for touch devices */
+@media (hover: none) {
+  .btn:active {
+    transform: translateY(1px);
+  }
+}
+
+/* Add scroll margin for anchor links */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Improve form element responsiveness */
+input,
+textarea,
+button {
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px; /* Prevents zoom on mobile */
+}
+
+/* Add print styles */
+@media print {
+  .btn-container,
+  #hamburger-nav,
+  .nav-links {
+    display: none;
+  }
+
+  section {
+    margin: 0;
+    padding: 1rem 0;
+    page-break-inside: avoid;
+  }
+}
+
+
+
+
+/* Base responsive setup */
+:root {
+  --mobile-padding: 1rem;
+  --tablet-padding: 2rem;
+  --desktop-padding: 3rem;
+  --container-width: min(1200px, 90%);
+}
+
+/* Fluid typography */
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1200;
+  --fluid-min-size: 16;
+  --fluid-max-size: 18;
+  --fluid-min-ratio: 1.2;
+  --fluid-max-ratio: 1.25;
+}
+
+/* Responsive container improvements */
+.section-container {
+  width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: max(
+    1rem,
+    calc((100% - var(--container-width)) / 2)
+  );
+}
+
+/* Enhanced grid system */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 300px), 1fr)
+  );
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+/* Responsive spacing system */
+.spacing-responsive {
+  padding-block: clamp(2rem, 5vw, 5rem);
+  padding-inline: clamp(1rem, 3vw, 3rem);
+}
+
+/* Enhanced image responsiveness */
+.responsive-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Profile section responsiveness */
+#profile {
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 400px), 1fr)
+  );
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  padding-block: clamp(3rem, 8vh, 8rem);
+}
+
+/* Responsive text sizing */
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+
+.body-text {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.6;
+}
+
+/* Enhanced navigation responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    inset: 0 0 0 30%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(0.5rem);
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+    padding: min(30vh, 10rem) 2rem;
+  }
+
+  .nav-links[data-visible="true"] {
+    transform: translateX(0%);
+  }
+}
+
+/* Responsive card layouts */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 250px), 1fr)
+  );
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: clamp(1rem, 2.5vw, 2rem);
+}
+
+/* Enhanced project section responsiveness */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 300px), 1fr)
+  );
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* Responsive form elements */
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.input-responsive {
+  width: 100%;
+  padding: clamp(0.5rem, 1.5vw, 1rem);
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
+/* Enhanced button responsiveness */
+.btn-responsive {
+  padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 3vw, 2rem);
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
+/* Responsive layout utilities */
+.flex-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+/* Enhanced media queries */
+@media screen and (max-width: 1200px) {
+  .section-container {
+    padding-inline: var(--tablet-padding);
+  }
+
+  .about-containers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-container {
+    padding-inline: var(--mobile-padding);
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+}
+
+/* Responsive aspect ratios */
+.aspect-ratio-box {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.aspect-ratio-box > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Enhanced responsive images */
+picture {
+  display: block;
+  width: 100%;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive table handling */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Better responsive spacing */
+.stack > * + * {
+  margin-top: clamp(1rem, 3vw, 2rem);
+}
+
+/* Enhanced responsive utilities */
+.hide-on-mobile {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.show-on-mobile {
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+/* Responsive iframe container */
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Enhanced touch targets for mobile */
+@media (max-width: 768px) {
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Responsive background images */
+.bg-responsive {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Enhanced container queries when supported */
+@container (min-width: 400px) {
+  .container-responsive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive columns */
+.columns {
+  columns: auto min(35ch, 100%);
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+/* Better form layout on different screens */
+@media (max-width: 768px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Enhanced scroll behavior */
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-container {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-section {
+    scroll-snap-align: start;
+  }
+}
+
+
+
+
+
+
+  
