@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
   <link rel="icon" type="image/jpg" href="/assets/favicon.ico">
-  
 </head>
 
 <body>
@@ -42,19 +41,20 @@
   </nav>
   <section id="profile">
     <div class="section__pic-container">
-      <img src="./assets/DP.jpg" alt="AMIT PROFILE PIC" />
+      <img src="./assets/Profile.png" alt="AMIT PROFILE PIC" />
     </div>
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">AMIT KUMAR PATRA</h1>
       <p class="section__text__p2">Web Developer</p>
       <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact
+        </button>
         <button class="btn btn-color-2" onclick="window.open('./assets/AMIT CV.jpg')">
           CV
         </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+
       </div>
       <div id="socials-container">
         <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
@@ -65,8 +65,8 @@
     </div>
   </section>
   <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
+    <!-- <p class="section__text__p1">Get To Know More</p> -->
+    <h1 class="title">Career Overview</h1>
     <div class="section-container">
 
       <div class="about-details-container">
@@ -85,13 +85,13 @@
         <div class="text-container">
           <p>
             I'am AMIT KUMAR PATRA
-            From Bhubaneswar, Odisha. I am a web developer. I am always ready to help you .
-
-            Highly skilled web developer with expertise in HTML5, CSS, JavaScript, and Java. Proficient in modern
-            frameworks and libraries including React JS, Next JS, and Node JS. Experienced in using MongoDB and Mongoose
-            for database management. Adept at creating responsive designs with Tailwind CSS and Bootstrap. Committed to
-            leveraging technical skills to develop innovative web solutions while continuously advancing professional
-            knowledge. </p>
+            From Bhubaneswar, Odisha.
+            A dedicated and results-oriented Bachelor of Engineering student with a passion for building innovative
+            solutions. I have hands-on experience in Full-Stack Development using the MERN stack to create responsive
+            and secure web applications. My practical skills are further enhanced by an internship in Java development
+            and an upcoming internship in Artificial Intelligence and Machine Learning, where I'll be focusing on Deep
+            Learning and Computer Vision. I am eager to leverage my diverse skill set to tackle complex challenges and
+            contribute to impactful projects. </p>
         </div>
       </div>
     </div>
@@ -100,11 +100,11 @@
 
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
+    <h1 class="title">Skillset</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container">
-          <h2 class="experience-sub-title">Skills</h2>
+          <!-- <h2 class="experience-sub-title">Skills</h2> -->
           <div class="article-container">
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
@@ -158,18 +158,42 @@
                 <p>Intermediate</p>
               </div>
             </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JAVA</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PYTHON</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
           </div>
         </div>
         <div class="details-container">
-          <h2 class="experience-sub-title">Techniques</h2>
+          <!-- <h2 class="experience-sub-title">Techniques</h2> -->
           <div class="article-container">
 
 
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>MongoDB & Mongoose</h3>
+                <h3>MongoDB</h3>
                 <p>Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Moongose</h3>
+                <p>Intermediate</p>
               </div>
             </article>
 
@@ -220,63 +244,198 @@
               </div>
             </article>
 
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AIML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
           </div>
         </div>
       </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
+
   <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
+    <!-- <p class="section__text__p1">Browse My Recent</p> -->
+    <h1 class="title">Project Hub</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/Project 1.png" alt="Project 1" class="project-img" />
+            <!-- <img src="./assets/Project 1.png" alt="Project 1" class="project-img" /> -->
           </div>
-
           <h2 class="experience-sub-title project-title">Link Compressor</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/Link_Compressor'">
               Github
             </button>
             <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Live Demo
             </button> -->
           </div>
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title"> Face Detection </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/amitkumarpatra99'">
+              Github
+            </button>
+          </div>
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">FLIPKART CLONE</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/AMAZON-FLIPKART-NETFLIX_CLONE/tree/main/FLIPKART%20CLONE'">
+              Github
+            </button>
+          </div>
+
         </div>
 
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/Project 2.png" alt="Project 2" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title"> Action Plan</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/ACTION_PLAN'">
               Github
             </button>
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
           </div>
+
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">Stone Paper </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/JavaScript-Projects'">
+              Github
+            </button>
+          </div>
+
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">NETFLIX CLONE </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/AMAZON-FLIPKART-NETFLIX_CLONE/tree/main/NETFLIX%20CLONE'">
+              Github
+            </button>
+          </div>
+
         </div>
+
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/Project 3.png" alt="Project 3" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">Password Keeper</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/Password_Keeper'">
               Github
             </button>
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
           </div>
+
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">Tic Tac Toe </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/JavaScript-Projects'">
+              Github
+            </button>
+          </div>
+
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">TWITTER CLONE </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/Twitter-Clone'">
+              Github
+            </button>
+          </div>
+
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">Get Me A Chai</h2>
+          <div class="project-description">
+
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/GET-ME-A-CHAI'">
+              Github
+            </button>
+          </div>
+
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">Currency Converter </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/Currency_Converter'">
+              Github
+            </button>
+          </div>
+
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">PORTFOLIO 01 </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/Portfolio'">
+              Github
+            </button>
+          </div>
+
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">WEB ..
+            STORE</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/WEB_STORE'">
+              Github
+            </button>
+          </div>
+
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title"> AMAZON CLONE</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/AMAZON-FLIPKART-NETFLIX_CLONE/tree/main/AMAZON%20CLONE'">
+              Github
+            </button>
+          </div>
+          <div class="article-container">
+          </div>
+          <h2 class="experience-sub-title project-title">PORTFOLIO 02</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/amitkumarpatra99/PORTFOLIO_99'">
+              Github
+            </button>
+          </div>
+
         </div>
       </div>
     </div>
+
+
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
   <section id="contact">
@@ -289,7 +448,8 @@
       </div>
       <div class="contact-info-container">
         <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a target="_blank" href="https://www.linkedin.com/in/amitkumarpatra99/">LinkedIn</a></p>
+        <p><a target="_blank" href="https://www.linkedin.com/in/amitkumarpatra99/">Linkedin</a></p>
+
       </div>
     </div>
   </section>

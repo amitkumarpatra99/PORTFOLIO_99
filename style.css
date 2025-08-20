@@ -60,10 +60,13 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: #1A2A80;
+  font-weight: 500;
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
+  color: grey;
 }
 
 /* HAMBURGER MENU */
@@ -165,8 +168,8 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  gap: 2rem;
+  height: 70vh;
 }
 
 .section__pic-container {
@@ -197,6 +200,11 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+}
+
+.title:hover {
+  color: #1A2A80;
+  cursor: pointer;
 }
 
 #socials-container {
@@ -239,14 +247,16 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-2,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: black;
+  /* color: white;
+   */
 }
 
-.btn-color-1:hover {
+.btn-color-2:hover {
   background: rgb(0, 0, 0);
+  color: white;
 }
 
 .btn-color-2 {
@@ -357,18 +367,20 @@ article .icon {
 
 #projects {
   position: relative;
+
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+
 }
 
-.project-img {
+/* .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
-}
+} */
 
 .project-title {
   margin: 1rem;
@@ -378,6 +390,7 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+
 }
 
 /* CONTACT */
@@ -430,6 +443,9 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
 
 
 /* Responsive */
@@ -556,8 +572,8 @@ footer p {
 
 .project-img {
   border-radius: 2rem;
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   max-width: 100%;
 }
 
@@ -754,13 +770,14 @@ img {
   .section-container {
     padding: 0 2rem;
   }
-  
+
   .details-container {
     padding: 1.2rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
+
   /* Profile section adjustments */
   #profile {
     min-height: fit-content;
@@ -801,6 +818,7 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+
   /* Navigation adjustments */
   nav {
     height: auto;
@@ -844,6 +862,7 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+
   /* General spacing adjustments */
   section {
     margin: 0 1rem;
@@ -918,7 +937,8 @@ html {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   overflow: hidden;
 }
 
@@ -984,11 +1004,13 @@ textarea,
 button {
   width: 100%;
   max-width: 100%;
-  font-size: 16px; /* Prevents zoom on mobile */
+  font-size: 16px;
+  /* Prevents zoom on mobile */
 }
 
 /* Add print styles */
 @media print {
+
   .btn-container,
   #hamburger-nav,
   .nav-links {
@@ -1027,19 +1049,15 @@ button {
 .section-container {
   width: var(--container-width);
   margin-inline: auto;
-  padding-inline: max(
-    1rem,
-    calc((100% - var(--container-width)) / 2)
-  );
+  padding-inline: max(1rem,
+      calc((100% - var(--container-width)) / 2));
 }
 
 /* Enhanced grid system */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 300px), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit,
+      minmax(min(100%, 300px), 1fr));
   gap: clamp(1rem, 3vw, 2rem);
 }
 
@@ -1061,10 +1079,8 @@ button {
 #profile {
   min-height: calc(100vh - var(--header-height));
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 400px), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit,
+      minmax(min(100%, 400px), 1fr));
   gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
   padding-block: clamp(3rem, 8vh, 8rem);
@@ -1106,10 +1122,8 @@ button {
 /* Responsive card layouts */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 250px), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit,
+      minmax(min(100%, 250px), 1fr));
   gap: clamp(1rem, 3vw, 2rem);
 }
 
@@ -1123,10 +1137,8 @@ button {
 /* Enhanced project section responsiveness */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 300px), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit,
+      minmax(min(100%, 300px), 1fr));
   gap: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -1193,10 +1205,11 @@ button {
 /* Responsive aspect ratios */
 .aspect-ratio-box {
   position: relative;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
 
-.aspect-ratio-box > * {
+.aspect-ratio-box>* {
   position: absolute;
   top: 0;
   left: 0;
@@ -1222,7 +1235,7 @@ picture img {
 }
 
 /* Better responsive spacing */
-.stack > * + * {
+.stack>*+* {
   margin-top: clamp(1rem, 3vw, 2rem);
 }
 
@@ -1244,7 +1257,8 @@ picture img {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
 
 .iframe-container iframe {
@@ -1318,10 +1332,3 @@ picture img {
     scroll-snap-align: start;
   }
 }
-
-
-
-
-
-
-  
